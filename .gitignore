@@ -1,0 +1,26 @@
+# Secrets
+.env
+
+# Internal planning / design docs
+docs/
+prompt-injection-probe-design-plan.md
+
+# Results — empty directory kept via .gitkeep
+results/*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual env
+venv/
+.venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
