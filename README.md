@@ -110,7 +110,7 @@ echo "system_prompt.txt" >> .gitignore
 pytest -v
 ```
 
-24 unit tests cover the pure helpers and the retry logic (no live API calls).
+27 tests cover the pure helpers, retry logic, and probe-to-target integration. The integration tests run the CLI against FastAPI's in-process TestClient with both LLM calls mocked, checking saved results and exit codes (no live API calls).
 
 ## Recorded offline example
 
@@ -130,7 +130,7 @@ The target fixture refuses the system-prompt extraction request, and the judge f
 The offline test suite was also run successfully:
 
 ```text
-24 passed in 1.10s
+27 passed
 ```
 
 To generate your own live results, follow the demo commands above with a valid Anthropic API key. Inspect the saved JSON before sharing it: it contains attack payloads, target responses, judge reasons, and timestamps.
